@@ -50,12 +50,12 @@ color:white;
 justify-content: space-between;
 align-items: center;
 width: 100%;
-transition: all 0.4s;
-font-family:'Lato', sans-serif;
+transition: all 1.2s;
+font-family:'oswald', sans-serif;
 
 top:0;
 color:white;
-background:rgba(0, 0, 0, .5);
+
 
 
 padding:20px 30px;
@@ -70,8 +70,8 @@ z-index: 1000;
    background-color: rgb(0,0,0,0.9);
     padding:10px 20px;
 color:	whitesmoke;
-
-font-size:1.2rem;
+transition: all .4s;
+font-size:1.3rem;
 font-weight: 900;
 
 
@@ -94,7 +94,17 @@ font-weight: 900;
     flex-direction: row;
     gap:48px;
 
-font-weight:400;
+
+
+  }
+  #nav_list_content2{
+    display: flex;
+   margin-top:20px;
+
+    flex-direction: row;
+    gap:48px;
+
+font-weight:600;
 
   }
   .list_button1{
@@ -136,15 +146,19 @@ overflow: hidden;
     display: none;
 
   }
-  .transition{
-    transition: all 0.4s;
-  }
+
 
   .part1_nav{
     color:rgb(255, 123, 0);
     font-weight:900;
-  
+    line-height: normal;
+    
+line-spacing:1px;
+
+    position: relative;
+
   }
+
   .part2_nav{
     color:white;
     font-weight:800;
@@ -152,13 +166,42 @@ overflow: hidden;
     flex-direction: row;
 align-items: center;
 justify-content: center;
-white-space: nowrap;
 
   }
   .color_white{
     color:white;
-font-size: 1.35rem;
+font-size: 1.3rem;
 display: inline-block;
 
   }
- 
+
+  
+ nav ul li::before{
+    content:' ';
+    position: absolute;
+    height: 2px;
+    width:90px;
+
+transform: scaleX(0);
+transition: transform .5s ease-in-out;
+transform-origin: right;
+
+
+
+    background: white;
+
+    bottom: -2px;
+    
+    
+     }
+     nav ul li:hover::before{
+      transform: scaleX(1);
+      transform-origin: left;
+     }
+
+     #searchBar_container{
+      
+
+
+
+     }
