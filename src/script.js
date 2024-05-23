@@ -49,18 +49,19 @@ const createSubtitle = text => text.split(" ").map(addWord);
 
 if(i===0){
 
+ ;
 
-createSubtitle("But in a much more real sense, I have no idea what I'm doing.");
+createSubtitle(`Comfortable, affordable hostels and PGs near campus. Discover comfortable and affordable hostels and PGs near campus, offering fully furnished rooms and all-inclusive amenities in a secure environment. Your perfect home away from home awaits. Start your hassle-free living experience today!`);
 }
 else if(i===1){
 
 
-  createSubtitle("Manas ");
+  createSubtitle("Looking for the perfect roommate? Discover compatible matches for a comfortable and harmonious living experience. Connect with like-minded individuals and create a home environment that suits your lifestyle. Start your search for the ideal roommate today!");
   }
   else if(i===2){
 
 
-    createSubtitle("toshniwal");
+    createSubtitle("Discover the ideal apartment for college students, offering affordable rent, prime locations near campus, and modern amenities. Enjoy a comfortable, convenient, and community-focused living experience. Start your journey to the perfect college home today!");
     }
 }
 
