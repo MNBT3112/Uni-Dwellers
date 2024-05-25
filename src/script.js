@@ -2,6 +2,7 @@
 
 
 
+
 const navbar = document.querySelector(".navbar");
 
 const logo1 = document.querySelector("#logo1");
@@ -103,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
           searchWrapper.classList.toggle('active');
           searchInput.focus(); 
        
-          searchWrapper.style.left = 'calc(100% - 260px)';
+          searchWrapper.style.left = 'calc(100% - 300px)';
 
 
       }
   });
 
-  // Close search bar on close icon click
+
   closeIcon.addEventListener('click', function() {
       searchWrapper.classList.remove('active');
     
@@ -120,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-  // Close search bar on ESC key press
+ 
   document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape' && searchWrapper.classList.contains('active')) {
           searchWrapper.classList.remove('active');
@@ -130,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  // Close search bar on clicking outside
+  
   document.addEventListener('click', function(event) {
       if (!searchWrapper.contains(event.target) && searchWrapper.classList.contains('active')) {
           searchWrapper.classList.remove('active');
