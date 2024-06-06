@@ -9,7 +9,7 @@ const logo1 = document.querySelector("#logo1");
 const banner_logo = document.getElementById("banner_logo");
 const studentBtn = document.getElementById('studentTenantBtn');
 
-
+const homeBtn = document.querySelector('.homeBtn');
 
 
 window.addEventListener("scroll" , function(){
@@ -21,6 +21,11 @@ navbar.classList.toggle('sticky', window.scrollY>0);
 
 
 
+
+})
+
+homeBtn.addEventListener('click' , function(){
+  window.scrollY = 0;
 
 })
 const cards = document.getElementsByClassName("card-subtitle");
