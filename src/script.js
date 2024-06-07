@@ -148,3 +148,46 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector('.input-holder');
+  const input = form.querySelector('.search-input');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const query = input.value.trim();
+      if (query !== '') {
+          const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+          window.location.href = searchUrl;
+      }
+  });
+
+  const searchIcon = document.querySelector('.search-icon');
+  const closeIcon = document.querySelector('.close');
+  const searchWrapper = document.querySelector('.search-wrapper');
+
+  searchIcon.addEventListener('click', function() {
+      searchWrapper.classList.add('active');
+      input.focus();
+  });
+
+  closeIcon.addEventListener('click', function() {
+      searchWrapper.classList.remove('active');
+      input.value = '';
+  });
+
+  document.addEventListener('click', function(event) {
+      if (!searchWrapper.contains(event.target)) {
+          searchWrapper.classList.remove('active');
+          input.value = '';
+      }
+  });
+
+  document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+          searchWrapper.classList.remove('active');
+          input.value = '';
+      }
+  });
+});
+
