@@ -1011,8 +1011,12 @@ button:focus {
   content: "\e74a";
 }
 
-.ti-pinterest:before {
-  content: "\e731";
+.ti-youtube:before {
+  content: "\e738"; /* Replace with the correct Unicode for YouTube icon */
+}
+
+.ti-instagram:before {
+  content: "\e740"; /* Replace with the correct Unicode for Instagram icon */
 }
 
 .btn_get_two {
