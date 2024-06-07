@@ -3,6 +3,7 @@ function showSignUp() {
     document.querySelector('.login').style.display = 'none';
     document.querySelector('.signup').style.display = 'flex';
     clearMessage();
+    clearInputFields();
   }
   
   function clearInputFields() {
@@ -15,6 +16,7 @@ function showSignUp() {
     document.querySelector('.signup').style.display = 'none';
     document.querySelector('.login').style.display = 'flex';
     clearMessage();
+    clearInputFields();
   }
   
 
