@@ -1,18 +1,18 @@
-// Function to show the sign-up form
+
 function showSignUp() {
     document.querySelector('.login').style.display = 'none';
     document.querySelector('.signup').style.display = 'flex';
     clearMessage();
   }
   
-  // Function to show the login form
+  
   function showLogin() {
     document.querySelector('.signup').style.display = 'none';
     document.querySelector('.login').style.display = 'flex';
     clearMessage();
   }
   
-  // Function to show messages
+
   function showMessage(message, isSuccess) {
     const messageBox = document.getElementById('messageBox');
     messageBox.textContent = message;
@@ -23,13 +23,13 @@ function showSignUp() {
     }, 3000);
   }
   
-  // Function to clear messages
+
   function clearMessage() {
     const messageBox = document.getElementById('messageBox');
     messageBox.classList.remove('show');
   }
   
-  // Function to handle sign-up
+  
   function signUp() {
     const username = document.getElementById('signupUsername').value;
     const password = document.getElementById('signupPassword').value;
@@ -53,7 +53,7 @@ function showSignUp() {
     }
   }
   
-  // Function to handle login
+
   function login() {
     const username = document.getElementById('loginUsername').value;
     const password = document.getElementById('loginPassword').value;
