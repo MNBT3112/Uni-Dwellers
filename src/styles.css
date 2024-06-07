@@ -754,10 +754,11 @@ reviewCard code */
   background-color: #111111;
 
   position: absolute;
-top:600px;
+top: calc(595px - 5vmin);
+
 left:calc(50% - 125px);
-border-radius: 24px;
-;
+border-radius: 2px;
+
 
   z-index: 100;
 }
@@ -766,6 +767,7 @@ border-radius: 24px;
   position: absolute;
   z-index:1;
   top:12vmin;
+
 
 
 
