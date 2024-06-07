@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,43 +7,50 @@
   font-family: "Quicksand", sans-serif;
 }
 
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: black;
-  background-image:url("https://wallpaper.forfun.com/fetch/e3/e3b9f81e20af10a5ab437f33f58fa23b.jpeg");
+  background-image: url("https://wallpaper.forfun.com/fetch/e3/e3b9f81e20af10a5ab437f33f58fa23b.jpeg");
   backdrop-filter: blur(50px);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  
-
   overflow: hidden;
 }
 
-
-.login {
-  position: absolute;
-  width: 300px;
-  height: 100%;
+.form-container {
+  position: relative;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 25px;
 }
-.login h2 {
+
+.login, .signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+h2 {
   font-size: 2em;
   color: #fff;
+  text-align: center;
 }
-.login .inputBx {
+
+.inputBx {
   position: relative;
   width: 100%;
 }
-.login .inputBx input {
+
+.inputBx input {
   position: relative;
   width: 100%;
   padding: 12px 20px;
@@ -54,19 +62,21 @@ body {
   box-shadow: none;
   outline: none;
 }
-.login .inputBx input[type="submit"] {
+
+.inputBx input[type="submit"] {
   width: 100%;
   background: #0078ff;
   background: linear-gradient(45deg, #b82657, rgb(255, 125, 0));
   border: none;
   cursor: pointer;
-  margin-top:36px;
-
+  margin-top: 36px;
 }
-.login .inputBx input::placeholder {
+
+.inputBx input::placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
-.login .links {
+
+.links {
   position: relative;
   width: 100%;
   display: flex;
@@ -74,16 +84,33 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-.login .links a {
+
+.links a {
   color: #fff;
   text-decoration: none;
-  opacity:0.75;
+  opacity: 0.75;
   font-size: 1rem;
-
-}
-.login .links a:hover{
-    transition: all 0.4s; 
-    font-size: 1.01rem;
-    opacity: 1;
 }
 
+.links a:hover {
+  transition: all 0.4s;
+  font-size: 1.01rem;
+  opacity: 1;
+}
+
+.message-box {
+  position: absolute;
+  top: -75px;
+  width: 100%;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  display: none;
+}
+
+.message-box.show {
+  display: block;
+}
