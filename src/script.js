@@ -5,7 +5,7 @@
 
 
 if (screen.width <= 699) {
-document.location = "https://www.google.co.in/";
+document.location = "https://www.google.co.in/search?sca_esv=8be23465e86ed254&sxsrf=ADLYWIKAQLRyZKHlLm-JYrOzB21zwpvyGQ:1722760985061&q=error&udm=2&fbs=AEQNm0CvspUPonaF8UH5s_LBD3JPX4RSeMPt9v8oIaeGMh2T2PRrsfVPlQRxSTpQ4UUI6wfsFlEVaMALnJjEZtYpSTLmUV5oGF4fnHSG0LbvLjVKUV0IWX-9yHknaXpsINbxRPK_rD0aGBXyqo-cUa2T6ZySNg4d875n-vXkSutq7bWvEyjXRQuBfWktFSUkoyoeiqhKHNE-BZiSEnsk93CG_Dl8i5jDTw&sa=X&ved=2ahUKEwj0qbDk-NqHAxUMzTgGHf-dDC4QtKgLegQIExAB&biw=1536&bih=742&dpr=1.25";
 }
 
 
