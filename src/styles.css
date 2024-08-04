@@ -748,25 +748,25 @@ h1>.magic>.magic-text {
 
 /* 
 reviewCard code */
-#hidder{
-  width:250px;
-  height:74px;
+#hidder {
+  width: 250px;
+  height: 74px;
   background-color: #111111;
 
   position: absolute;
-top: calc(600px - 5vmin);
+  top: calc(600px - 5vmin);
 
-left:calc(50% - 125px);
-border-radius: 2px;
+  left: calc(50% - 125px);
+  border-radius: 2px;
 
 
   z-index: 100;
 }
 
-#reviewContainer{
+#reviewContainer {
   position: absolute;
-  z-index:1;
-  top:12vmin;
+  z-index: 1;
+  top: 12vmin;
 
 
 
@@ -774,6 +774,7 @@ border-radius: 2px;
 
 
 }
+
 /* #reviewContainer {
   display: flex;
   flex-direction: row;
@@ -881,22 +882,23 @@ opacity:.88;
 
   
 } */
-#emptySpace{
-  width:100%;
-  height:16vmin;
+#emptySpace {
+  width: 100%;
+  height: 16vmin;
   background-color: #00000000;
   z-index: 100;
-  
+
 }
+
 /* footer code*/
 
 
 .new_footer_area {
   background-color: #2d3436;
   background-image: linear-gradient(0deg, #2d3436 0%, #000000 74%);
- border-top:1px rgba(255, 255, 255, 0.2) solid;
+  border-top: 1px rgba(255, 255, 255, 0.2) solid;
 
- z-index: 100;
+  z-index: 100;
 }
 
 .new_footer_top {
@@ -1012,11 +1014,13 @@ button:focus {
 }
 
 .ti-youtube:before {
-  content: "\e738"; /* Replace with the correct Unicode for YouTube icon */
+  content: "\e738";
+  /* Replace with the correct Unicode for YouTube icon */
 }
 
 .ti-instagram:before {
-  content: "\e740"; /* Replace with the correct Unicode for Instagram icon */
+  content: "\e740";
+  /* Replace with the correct Unicode for Instagram icon */
 }
 
 .btn_get_two {
@@ -1123,5 +1127,25 @@ button:focus {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 88888888888888888888888888888888*/
 
 

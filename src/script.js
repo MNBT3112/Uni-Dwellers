@@ -3,6 +3,13 @@
 
 
 
+
+if (screen.width <= 699) {
+document.location = "https://www.google.co.in/";
+}
+
+
+
 const navbar = document.querySelector(".navbar");
 
 const logo1 = document.querySelector("#logo1");
@@ -190,4 +197,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
+
+
+
+
+/////////////
 
